@@ -1,0 +1,181 @@
+/* Dark Mode Styles for PDF to Markdown */
+
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* Keep preview/edit pane light */
+textarea,
+.remarkable-preview,
+div[dangerouslySetInnerHTML] {
+    background-color: white !important;
+    color: #212121 !important;
+}
+
+/* Dark mode for navbar/header */
+.navbar {
+    background-color: #2d2d2d !important;
+    border-color: #3d3d3d !important;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #e0e0e0 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff !important;
+    background-color: #3d3d3d !important;
+}
+
+/* Dark mode for panels */
+.panel {
+    background-color: #2d2d2d !important;
+    border-color: #3d3d3d !important;
+}
+
+.panel-heading {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+.panel-body {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Dark mode for modals */
+.modal-content {
+    background-color: #2d2d2d !important;
+    border-color: #3d3d3d !important;
+}
+
+.modal-header,
+.modal-footer {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+}
+
+.modal-title {
+    color: #e0e0e0 !important;
+}
+
+.modal-body {
+    color: #e0e0e0 !important;
+}
+
+/* Dark mode for buttons - keep bootstrap colors but adjust for dark theme */
+.btn-default {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #4d4d4d !important;
+    border-color: #5d5d5d !important;
+    color: #ffffff !important;
+}
+
+.btn-default.active {
+    background-color: #4d4d4d !important;
+    border-color: #5d5d5d !important;
+    color: #ffffff !important;
+}
+
+/* Keep primary button blue but adjust for dark mode */
+.btn-primary {
+    background-color: #0066cc !important;
+    border-color: #0066cc !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0052a3 !important;
+    border-color: #0052a3 !important;
+}
+
+/* Dark mode for forms */
+.form-control {
+    background-color: #2d2d2d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+.form-control:focus {
+    background-color: #3d3d3d !important;
+    border-color: #0066cc !important;
+    color: #e0e0e0 !important;
+}
+
+/* Dark mode for dropzone/upload area */
+.dropzone {
+    background-color: #2d2d2d !important;
+    border-color: #4d4d4d !important;
+}
+
+/* Dark mode for tables */
+.table {
+    color: #e0e0e0 !important;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-color: #3d3d3d !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #2a2a2a !important;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #3d3d3d !important;
+}
+
+/* Dark mode for alerts */
+.alert {
+    background-color: #3d3d3d !important;
+    border-color: #4d4d4d !important;
+    color: #e0e0e0 !important;
+}
+
+/* Dark mode for progress bars */
+.progress {
+    background-color: #3d3d3d !important;
+}
+
+/* Dark mode for wells */
+.well {
+    background-color: #2d2d2d !important;
+    border-color: #3d3d3d !important;
+}
+
+/* Horizontal rule styling */
+hr {
+    border-top-color: #3d3d3d !important;
+}
+
+/* Links */
+a {
+    color: #66b3ff !important;
+}
+
+a:hover,
+a:focus {
+    color: #99ccff !important;
+}
+
+/* Footer */
+footer {
+    background-color: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-top-color: #3d3d3d !important;
+}

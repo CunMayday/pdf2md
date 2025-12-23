@@ -62,6 +62,19 @@ export default class ResultView extends React.Component {
         });
     }
 
+    downloadMarkdown() {
+        const {text} = this.state;
+        const blob = new Blob([text], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'converted.md';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+    }
+
     render() {
         const remarkable = new Remarkable({
             breaks: true,
@@ -89,6 +102,11 @@ export default class ResultView extends React.Component {
                   </Button>
                   <Button onClick={ this.switchToPreview.bind(this) } className={ preview ? 'active' : '' }>
                     Preview
+                  </Button>
+                </ButtonGroup>
+                <ButtonGroup bsSize="medium">
+                  <Button onClick={ this.downloadMarkdown.bind(this) } bsStyle="primary">
+                    Export Markdown
                   </Button>
                 </ButtonGroup>
               </ButtonToolbar>
